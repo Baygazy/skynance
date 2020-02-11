@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="profile-page">
+    <div class="container">
+        <div class="row">
+            <div class="d20">
+                <div class="padding-right m20">
+                    <div class="box-shadow">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="/static/img/profile-image.png" alt="Бегалиев Тилек Таалаевич">
+                            </div>
+                            <div class="name">
+                                <p>Бегалиев Тилек Таалаевич</p>
+                            </div>
+                            <div class="balance">
+                                <span>мой баланс:</span>
+                                <p>750.00 <u>C</u></p>
+                            </div>
+                        </div>
+                        <nav class="sidebar-menu">
+                            {% include 'profile-sidebar-menu.html' %}
+                        </nav>
+                    </div>
+                </div>
+                <div class="mn10"></div>
+            </div>
+            <div class="d80 account">
+                <div class="box-shadow">
+                    <div class="investment">
+                        <h2>Инвестировать</h2>
+                        <div class="mn5"></div>
+                        <div class="projects">
+                            <div class="item">
+                                <div class="image"><img src="/static/img/svg/1.svg" alt="Ашар фонду"></div>
+                                <h3 class="title">Ашар фонду</h3>
+                                <p class="sum">100.00 <u>C</u></p>
+                            </div>
+                            <div class="item">
+                                <div class="image"><img src="/static/img/svg/2.svg" alt="Кайрымдуулук"></div>
+                                <h3 class="title">Кайрымдуулук</h3>
+                                <p class="sum">50.00 <u>C</u></p>
+                            </div>
+                            <div class="item">
+                                <div class="image"><img src="/static/img/svg/3.svg" alt="Инвест фонду"></div>
+                                <h3 class="title">Инвест фонду</h3>
+                                <p class="sum">100.00 <u>C</u></p>
+                            </div>
+                        </div>
+
+                        <form method="post">
+                            <div class="well">
+                                <div class="table margin-none">
+                                    <div class="d33">
+                                        <div class="padding-right m20">
+                                            <label class="label" for="sum">Введите сумму</label>
+                                            <input type="number" class="input" name="sum" id="sum" step="0.01" placeholder="Введите сумму" required>
+                                        </div>
+                                    </div>
+                                    <div class="d33">
+                                        <label class="label" for="cat">Выберите категорию</label>
+                                        <select class="select" name="cat" id="cat" required>
+                                            <option value="1">Ашар фонду</option>
+                                            <option value="2">Кайрымдуулук</option>
+                                            <option value="3">Инвест фонду</option>
+                                        </select>
+                                    </div>
+                                    <div class="d33">
+                                        <div class="padding-left m20">
+                                            <label class="label" for="spend">Нажмите сюда</label>
+                                            <button type="submit" class="btn btn-button  margin-none" id="spend" name="spend">Вложить</button>
+                                            <input type="hidden" name="secure-code" value="174439">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="member box-shadow">
+                        <h4>Ваш представитель</h4>
+                        <div class="image">
+                            <img src="/static/img/profile-image.png" alt="Begaliev Begaliev">
+                        </div>
+                        <div class="name">
+                            <p>Begaliev Begaliev</p>
+                        </div>
+                        <div class="rating">
+                            <span>Рейтинг:</span><span class="count">0</span>
+                        </div>
+                        <div class="table rating-box">
+                            <div class="d50">
+                                <div class="rating-r like ">15</div>
+                            </div>
+                            <div class="d50">
+                                <div class="rating-r dislike ">4</div>
+                            </div>
+                        </div>
+                        <div class="contacts">
+                            <h5>Контакты</h5>
+                            <a href="tel:+9960703003003">+9960703003003</a>
+                            <h5>E-mail</h5>
+                            <a href="mailto:begaliev@gmail.com">begaliev@gmail.com</a>
+                            <div class="add-rating"><a href="chat.html">Написать представителю</a></div>
+                        </div>
+                    </div>
+                    <div class="mn5"></div>
+                </div>
+                <div class="mn10"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock body %}

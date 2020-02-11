@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="profile-page">
+    <div class="container">
+        <div class="row">
+            <div class="d20">
+                <div class="padding-right m20">
+                    <div class="box-shadow">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="/static/img/profile-image.png" alt="Бегалиев Тилек Таалаевич">
+                            </div>
+                            <div class="name">
+                                <p>Бегалиев Тилек Таалаевич</p>
+                            </div>
+                            <div class="balance">
+                                <span>мой баланс:</span>
+                                <p>750.00 <u>C</u></p>
+                            </div>
+                        </div>
+                        <nav class="sidebar-menu">
+                            {% include 'profile-sidebar-menu.html' %}
+                        </nav>
+                    </div>
+                </div>
+                <div class="mn10"></div>
+            </div>
+            <div class="d80 account">
+                <div class="box-shadow desc">
+                    <div class="m20">
+                        <div class="mn10"></div>
+                        <div class="doing">
+                            <h2>История операции</h2>
+                            <div class="mn5"></div>
+                            <div class="zZz">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>Операция</th>
+                                        <th>Платежная система</th>
+                                        <th>Сумма</th>
+                                        <th>Дата</th>
+                                        <th>Комментарий</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="plus">
+                                        <td class="color-type uppercasse">
+                                            Возврат средств								</td>
+                                        <td>
+                                            Элдик казына								</td>
+                                        <td><b><u>C</u> 40.00</b></td>
+                                        <td>23/03/2019 23:15</td>
+                                        <td>Ашар фонду</td>
+                                    </tr>
+                                    <tr class="plus">
+                                        <td class="color-type uppercasse">
+                                            Вклад								</td>
+                                        <td>
+                                            Элдик казына								</td>
+                                        <td><b><u>C</u> 100.00</b></td>
+                                        <td>23/03/2019 23:14</td>
+                                        <td>Ашар фонду</td>
+                                    </tr>
+                                    <tr class="plus">
+                                        <td class="color-type uppercasse">
+                                            Возврат средств								</td>
+                                        <td>
+                                            Элдик казына								</td>
+                                        <td><b><u>C</u> 10.00</b></td>
+                                        <td>23/03/2019 01:26</td>
+                                        <td>Ашар фонду</td>
+                                    </tr>
+                                    <tr class="plus">
+                                        <td class="color-type uppercasse">
+                                            Вклад								</td>
+                                        <td>
+                                            Элдик казына								</td>
+                                        <td><b><u>C</u> 50.00</b></td>
+                                        <td>23/03/2019 01:26</td>
+                                        <td>Ашар фонду</td>
+                                    </tr>
+                                    <tr class="plus">
+                                        <td class="color-type uppercasse">
+                                            Возврат средств								</td>
+                                        <td>
+                                            Элдик казына								</td>
+                                        <td><b><u>C</u> 550.00</b></td>
+                                        <td>06/03/2019 17:08</td>
+                                        <td>Ашар фонду</td>
+                                    </tr>
+                                    <tr class="plus">
+                                        <td class="color-type uppercasse">
+                                            Вклад								</td>
+                                        <td>
+                                            Элдик казына								</td>
+                                        <td><b><u>C</u> 500.00</b></td>
+                                        <td>06/03/2019 17:08</td>
+                                        <td>Ашар фонду</td>
+                                    </tr>
+                                    <tr class="plus">
+                                        <td class="color-type uppercasse">
+                                            Вклад								</td>
+                                        <td>
+                                            Элдик казына								</td>
+                                        <td><b><u>C</u> 50.00</b></td>
+                                        <td>06/03/2019 17:04</td>
+                                        <td>Ашар фонду</td>
+                                    </tr>
+                                    <tr class="plus">
+                                        <td class="color-type uppercasse">
+                                            Возврат средств								</td>
+                                        <td>
+                                            Элдик казына								</td>
+                                        <td><b><u>C</u> 50.00</b></td>
+                                        <td>05/03/2019 17:13</td>
+                                        <td>Ашар фонду</td>
+                                    </tr>
+                                    <tr class="plus">
+                                        <td class="color-type uppercasse">
+                                            Возврат средств								</td>
+                                        <td>
+                                            Элдик казына								</td>
+                                        <td><b><u>C</u> 50.00</b></td>
+                                        <td>05/03/2019 17:13</td>
+                                        <td>Ашар фонду</td>
+                                    </tr>
+                                    <tr class="plus">
+                                        <td class="color-type uppercasse">
+                                            Вклад								</td>
+                                        <td>
+                                            Элдик казына								</td>
+                                        <td><b><u>C</u> 50.00</b></td>
+                                        <td>05/03/2019 17:13</td>
+                                        <td>Ашар фонду</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mn10"></div>
+            </div>        </div>
+    </div>
+</section>
+{% endblock body %}

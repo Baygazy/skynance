@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="feedback">
+    <div class="container wh">
+        <div class="mn30"></div>
+        <div class="col-md-12 text-align-center"><h1>Наши контакты</h1></div>
+        <div class="mn30"></div>
+        <div class="contentt">
+            <div class="table margin-none">
+                <div class="d60">
+                    <div class="form-block">
+                        <form method="post" class="triangle">
+                            <input type="hidden" name="secure-code" value="127777">
+                            <div class="table margin-none">
+
+                                <label>Ваше имя</label>
+                                <input type="text" name="name" class="input" required value="">
+                                <label>Ваш E-mail</label>
+                                <input type="email" name="email" class="input" required value="">
+                                <label>Тема сообщения</label>
+                                <input type="text" name="subject" class="input" required value="">
+                                <label>Сообщение</label>
+                                <textarea name="text" cols="30" rows="5" required></textarea>
+                                <div class="mn10"></div>
+                                <div class="table">
+                                    <div class="d50">
+                                        <div class="padding-right m10">
+                                            <input type="text" name="turing" class="input" placeholder="Защитный код" required>
+                                        </div>
+                                    </div>
+                                    <div class="d50">
+                                        <div class="padding-left m10">
+                                            <div class="captcha">
+                                                <div class="middle">
+                                                    <img src="/captcha?rand=757568" alt="Защитный код">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" name="send" class="send-btn margin-none">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d40">
+                    <div class="contact">
+                        <div class="max-width">
+                            <h2>Адрес в городе <span>Бишкек</span></h2>
+                            <div class="white-block">
+                                <h3>Адрес:</h3>
+                                <p>6 мкр. 7а дом 29 кв.</p>
+                                <div class="mn10"></div>
+                                <h3>Юр. адрес:</h3>
+                                <p>4 мкр. 44 дом 46 кв.</p>
+                                <div class="mn10"></div>
+                                <h3>Факт. адрес юрид. название:</h3>
+                                <p>Уркор Эли Комдук Бирикмеси</p>
+                                <div class="mn10"></div>
+                                <h3>Телефоны для связи:</h3>
+                                <p>
+                                    <a href="tel:+996555435433">+996 (555) 435-433</a>
+                                    <br>
+                                    <a href="tel:+996702916238">+996 (702) 916-238</a>
+                                </p>
+                                <div class="mn10"></div>
+                                <h3>Email:</h3>
+                                <p><a href="mailto:bishkek@kazyna.kg">bishkek@kazyna.kg</a></p>
+                            </div>
+                            <div class="mn15"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mn30"></div>
+    </div>
+</section>
+{% endblock body %}

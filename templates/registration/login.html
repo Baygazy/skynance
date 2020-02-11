@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="login-page auth">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h1>Авторизация</h1></div>
+        </div>
+        <div class="row">
+            <div class="contentt">
+                <div class="d50">
+                    <a href="/" class="a">
+                        <div class="image"><img src="/static/img/logo/kaz800.png" alt="Элдик казына"></div>
+                    </a>
+                </div>
+                <div class="d50">
+                    <div class="table">
+                        <div class="mn5"></div>
+                        <div class="form">
+                            <form method="post">
+                                {% csrf_token %}
+                                <label>Номер телефона</label>
+                                <input type="text" name="username" class="input" placeholder="Номер телефона (0XXX XX XX XX)" required value={{ form.username }}
+                                <label>Пароль</label>
+                                <input type="password" name="password" class="input" placeholder="Пароль" required value={{ form.password }}
+                                <div class="table margin-none">
+                                    <div class="middle">
+                                        <label>
+                                            <a href="{% url 'password_reset' %}" class="a">Забыли пароль?</a>
+                                        </label>
+                                    </div>
+                                </div>
+                                <button type="submit" name="login">Войти</button>
+                                <input type="hidden" name="secure-code" value="566009">
+                                <input type="hidden" name="screen-size">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mn30"></div>
+    </div>
+</section>
+{% endblock body %}

@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="profile-page">
+    <div class="container">
+        <div class="row">
+            <div class="d20">
+                <div class="padding-right m20">
+                    <div class="box-shadow">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="/static/img/profile-image.png" alt="Бегалиев Тилек Таалаевич">
+                            </div>
+                            <div class="name">
+                                <p>Бегалиев Тилек Таалаевич</p>
+                            </div>
+                            <div class="balance">
+                                <span>мой баланс:</span>
+                                <p>750.00 <u>C</u></p>
+                            </div>
+                        </div>
+                        <nav class="sidebar-menu">
+                            {% include 'profile-sidebar-menu.html' %}
+                        </nav>
+                    </div>
+                </div>
+                <div class="mn10"></div>
+            </div>
+            <div class="d80 account">
+                <div class="box-shadow-chat">
+                    <div class="chat-box border-circle">
+                        <div class="table margin-none">
+                            <div class="d25 hide">
+                                <div class="peoples">
+                                    <div class="group">
+                                        <h4><a href="#">Председатели</a></h4>
+                                        <ul class="list">
+                                            <li class="peoples__item">
+                                                <a href="#">
+                                                    <div class="chat__thumb"><img src="/static/img/profile-image.png" alt=""></div>
+                                                    <span>Председатель 1</span>
+                                                </a>
+                                            </li>
+                                            <li class="peoples__item">
+                                                <a href="#">
+                                                    <div class="chat__thumb"><img src="/static/img/profile-image.png" alt=""></div>
+                                                    <span>Председатель 2</span>
+                                                </a>
+                                            </li>
+                                            <li class="peoples__item">
+                                                <a href="#">
+                                                    <div class="chat__thumb"><img src="/static/img/profile-image.png" alt=""></div>
+                                                    <span>Председатель 3</span>
+                                                </a>
+                                            </li>
+                                            <li class="peoples__item">
+                                                <a href="#">
+                                                    <div class="chat__thumb"><img src="/static/img/profile-image.png" alt=""></div>
+                                                    <span>Председатель 4</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="group groups">
+                                        <h4><a href="#">Остальные</a></h4>
+                                        <ul class="list">
+                                            <li class="peoples__item group-chat active-chat">
+                                                <a href="chat.html">
+                                                    <div class="chat__thumb"><img src="/static/img/group-icon.png" alt=""></div>
+                                                    <span>Основной чат</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table margin-none">
+                                <div class="chat">
+                                    <div class="chat__header">
+                                        <div class="chat-name">
+                                            <div class="chat__thumb"><img src="/static/img/group-icon.png" alt=""></div>
+                                            <span>Основной чат</span>
+                                        </div>
+                                        <div class="online-count hide">сейчас онлайн <span>0 человек</span></div>
+                                    </div>
+                                    <div class="chat__content" data-value="0"></div>
+                                    <div class="chat__footer">
+                                        <div class="inp">
+                                            <input type="text" class="new-message" placeholder="Введите текст">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mn10"></div>
+                </div>
+            </div>        </div>
+    </div>
+</section>
+{% endblock body %}

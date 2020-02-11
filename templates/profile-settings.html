@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="profile-page">
+    <div class="container">
+        <div class="row">
+            <div class="d20">
+                <div class="padding-right m20">
+                    <div class="box-shadow">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="/static/img/profile-image.png" alt="Бегалиев Тилек Таалаевич">
+                            </div>
+                            <div class="name">
+                                <p>Бегалиев Тилек Таалаевич</p>
+                            </div>
+                            <div class="balance">
+                                <span>мой баланс:</span>
+                                <p>750.00 <u>C</u></p>
+                            </div>
+                        </div>
+                        <nav class="sidebar-menu">
+                            {% include 'profile-sidebar-menu.html' %}
+                        </nav>
+                    </div>
+                </div>
+                <div class="mn10"></div>
+            </div>
+            <div class="d80 account">
+                <div class="mn10"></div>
+                <div class="tabs">
+                    <div class="settings-tabs">
+                        <div class="settings-content">
+                            <div class="tab-1">
+                                <div class="mn10"></div>
+                                <div class="progress-bar">
+                                    <div class="meter">
+                                        <span style="width: 0%"></span>
+                                    </div>
+                                    <div class="mn10"></div>
+                                </div>
+                                <div class="upload">
+                                    <form method="post" action="/profile-settings/upload" id="upload" enctype="multipart/form-data">
+                                        <div class="file-upload">
+                                            <input type="file" name="file" id="file" required>
+                                            <div class="table margin-none">
+                                                <label for="file">
+                                                    <div class="button">Сменить фотографию</div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="hide">
+                                    </form>
+                                </div>
+                                <div class="mn10"></div>
+                                <div class="middle">
+                                    <div class="thumb">
+                                        <img src="/static/img/profile-image.png" alt="">
+                                    </div>
+                                    <div class="personal-info">
+                                        <p class="name">Бегалиев Тилек Таалаевич</p>
+                                        <span class="number">№14703369</span>
+                                    </div>
+                                </div>
+                                <div class="mn15"></div>
+                                <div class="m15">
+                                    <div class="border-bottom-relative"></div>
+                                </div>
+
+                                <div class="table margin-none">
+                                    <div class="middle">
+                                        <div class="mn20"></div>
+                                        <div class="form">
+                                            <label>Номер телефона</label>
+                                            <input type="text" class="inputm" value="0703003995" disabled>
+                                            <label>Ваш e-mail</label>
+                                            <input type="email" class="inputm" value="tilek.begaliev@gmail.com" disabled>
+                                            <label>Дата регистрации</label>
+                                            <input type="email" class="inputm" value="28/02/2019 18:02" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mn10">
+                </div>        </div>
+        </div>
+</section>
+{% endblock body %}

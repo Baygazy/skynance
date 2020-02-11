@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="profile-page">
+    <div class="container">
+        <div class="row">
+            <div class="d20">
+                <div class="padding-right m20">
+                    <div class="box-shadow">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="/static/img/profile-image.png" alt="Бегалиев Тилек Таалаевич">
+                            </div>
+                            <div class="name">
+                                <p>Бегалиев Тилек Таалаевич</p>
+                            </div>
+                            <div class="balance">
+                                <span>мой баланс:</span>
+                                <p>750.00 <u>C</u></p>
+                            </div>
+                        </div>
+                        <nav class="sidebar-menu">
+                            {% include 'profile-sidebar-menu.html' %}
+                        </nav>
+                    </div>
+                </div>
+                <div class="mn10"></div>
+            </div>
+            <div class="d80 account">
+                <div class="box-shadow desc">
+                    <div class="m20">
+                        <div class="mn10"></div>
+                        <h2>Мои вложения</h2>
+                        <div class="mn5"></div>
+
+                        <div class="projects">
+                            <div class="item">
+                                <div class="image"><img src="/static/img/svg/1.svg" alt="Ашар фонду"></div>
+                                <h3 class="title">Ашар фонду</h3>
+                                <p class="sum">100.00 <u>C</u></p>
+                                <form method="post" id="form">
+                                    <input type="number" name="sum" class="input" step="0.01" placeholder="Введите сумму" required >
+                                    <div class="mn5"></div>
+                                    <a rel="submit" class="primary-btn margin-none btn">Вывести сумму</a>
+                                    <input type="hidden" name="spend">
+                                    <input type="hidden" name="secure-code" value="273926">
+
+                                </form>
+
+                            </div>
+                            <div class="item">
+                                <div class="image"><img src="/static/img/svg/2.svg" alt="Кайрымдуулук"></div>
+                                <h3 class="title">Кайрымдуулук</h3>
+                                <p class="sum">50.00 <u>C</u></p>
+
+                                <input type="text" class="input" value="Невозможно вывести" disabled>
+                                <div class="mn5"></div>
+                                <a href="/investment#2" class="primary-btn margin-none">Сделать вложение</a>
+                            </div>
+                            <div class="item">
+                                <div class="image"><img src="/static/img/svg/3.svg" alt="Инвест фонду"></div>
+                                <h3 class="title">Инвест фонду</h3>
+                                <p class="sum">100.00 <u>C</u></p>
+
+                                <input type="text" class="input" value="Невозможно вывести" disabled>
+                                <div class="mn5"></div>
+                                <a href="/investment#3" class="primary-btn margin-none">Сделать вложение</a>
+                            </div>
+                        </div>
+                        <div class="last-doing">
+                            <table class="table table-striped margin-none">
+                                <thead>
+                                <tr>
+                                    <th width="25%">Операция</th>
+                                    <th width="25%">Сумма</th>
+                                    <th width="25%">Дата</th>
+                                    <th width="25%">Комментарий</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 100.00</b></td>
+                                    <td>23/03/2019 23:14</td>
+                                    <td>Ашар фонду</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 50.00</b></td>
+                                    <td>23/03/2019 01:26</td>
+                                    <td>Ашар фонду</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 500.00</b></td>
+                                    <td>06/03/2019 17:08</td>
+                                    <td>Ашар фонду</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 50.00</b></td>
+                                    <td>06/03/2019 17:04</td>
+                                    <td>Ашар фонду</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 50.00</b></td>
+                                    <td>05/03/2019 17:13</td>
+                                    <td>Ашар фонду</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 850.00</b></td>
+                                    <td>04/03/2019 15:59</td>
+                                    <td>Ашар фонду</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 850.00</b></td>
+                                    <td>04/03/2019 15:52</td>
+                                    <td>Ашар фонду</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 500.00</b></td>
+                                    <td>04/03/2019 15:44</td>
+                                    <td>Ашар фонду</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 850.00</b></td>
+                                    <td>01/03/2019 19:52</td>
+                                    <td>Ашар фонду</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 50.00</b></td>
+                                    <td>01/03/2019 18:51</td>
+                                    <td>Ашар фонду</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 100.00</b></td>
+                                    <td>01/03/2019 18:36</td>
+                                    <td>Инвест фонду</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 50.00</b></td>
+                                    <td>01/03/2019 18:36</td>
+                                    <td>Кайрымдуулук</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">Вклад</td>
+                                    <td><b><u>C</u> 100.00</b></td>
+                                    <td>01/03/2019 18:36</td>
+                                    <td>Ашар фонду</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mn5"></div>
+                    </div>
+                </div>
+                <div class="mn10"></div>
+            </div>        </div>
+    </div>
+</section>
+{% endblock body %}

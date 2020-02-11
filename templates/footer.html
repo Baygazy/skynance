@@ -1,0 +1,61 @@
+<footer>
+    <div class="container">
+        <div class="ftr-bg">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-3 col-12">
+                    <h4>Полезные ссылки</h4>
+                    <ul class="ftr-menu">
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="{% url 'about' %}">О Компании</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12">
+                    <h4>Быстрые ссылки</h4>
+                    <ul class="ftr-menu">
+                        {% if user.is_authenticated %}
+                        <li><a href="{% url 'profile' %}">Личный кабинет</a></li>
+                        <li><a href="{% url 'logout' %}">Выйти</a></li>
+                        <li><a href="{% url 'password_change' %}">Сменить пароль</a></li>
+                        {% else %}
+                        <li><a href="{% url 'registration' %}">Регистрация</a></li>
+                        <li><a href="{% url 'login' %}">Войти в кабинет</a></li>
+                        <li><a href="{% url 'password_reset' %}">Восстановить пароль</a></li>
+                        {% endif %}
+{#                        <li><a href="{% url 'registration' %}">Регистрация</a></li>#}
+{#                        <li><a href="{% url 'login' %}">Войти в кабинет</a></li>#}
+
+                    </ul>
+                </div>
+                <div class="col-md-3 col-12">
+                    <h4>Помощь</h4>
+                    <ul class="ftr-menu">
+                        <li><a href="{% url 'contact' %}">Контакты</a></li>
+                        <li><a href="{% url 'faq' %}">Вопрос/Ответы</a></li>
+{#                        <li><a href="/jobs">Вакансии</a></li>#}
+                    </ul>
+                </div>
+            </div>
+            <div class="mn10"></div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 col-xs-12">
+                    <ul class="social-icons">
+                        <li>
+                            <a href="/"><img src="/static/img/instagram.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="/"><img src="/static/img/in.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="/"><img src="/static/img/google.png" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="/"><img src="/static/img/facebook.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; Все права защищены. Элдик Казына 2019</p>
+        </div>
+    </div>
+</footer>

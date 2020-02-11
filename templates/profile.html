@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="profile-page">
+    <div class="container">
+        <div class="row">
+            <div class="d20">
+                <div class="padding-right m20">
+                    <div class="box-shadow">
+                        <div class="profile">
+                            <div class="image">
+                                <img src="/static/img/profile-image.png" alt="Бегалиев Тилек Таалаевич">
+                            </div>
+                            <div class="name">
+                                <p>Бегалиев Тилек Таалаевич</p>
+                            </div>
+                            <div class="balance">
+                                <span>мой баланс:</span>
+                                <p>750.00 <u>C</u></p>
+                            </div>
+                        </div>
+                        <nav class="sidebar-menu">
+                            {% include 'profile-sidebar-menu.html' %}
+                        </nav>
+                    </div>
+                </div>
+                <div class="mn10"></div>
+            </div>
+            <div class="d80 account">
+                <div class="box-shadow">
+                    <div class="investment">
+                        <h2>Главная</h2>
+                        <div class="mn5"></div>
+                        <div class="projects">
+                            <div class="item">
+                                <div class="image"><img src="/static/img/svg/1.svg" alt="Ашар фонду"></div>
+                                <h3 class="title">Ашар фонду</h3>
+                                <p class="sum">0 <u>C</u></p>
+                                <a href="/investment#1" class="primary-btn">Сделать вложение</a>
+                            </div>
+                            <div class="item">
+                                <div class="image"><img src="/static/img/svg/2.svg" alt="Кайрымдуулук"></div>
+                                <h3 class="title">Кайрымдуулук</h3>
+                                <p class="sum">0 <u>C</u></p>
+                                <a href="/investment#2" class="primary-btn">Сделать вложение</a>
+                            </div>
+                            <div class="item">
+                                <div class="image"><img src="/static/img/svg/3.svg" alt="Инвест фонду"></div>
+                                <h3 class="title">Инвест фонду</h3>
+                                <p class="sum">0 <u>C</u></p>
+                                <a href="/investment#3" class="primary-btn">Сделать вложение</a>
+                            </div>
+                        </div>
+                        <div class="last-doing">
+                            <h4>Последние операции</h4>
+                            <hr class="margin-none">
+                            <div class="mn5"></div>
+                            <table class="table table-striped margin-none">
+                                <thead>
+                                <tr>
+                                    <th>Операция</th>
+                                    <th>Платежная система</th>
+                                    <th>Сумма</th>
+                                    <th>Дата</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">
+                                        Возврат средств							</td>
+                                    <td>
+                                        Элдик казына							</td>
+                                    <td><b><u>C</u> 40.00</b></td>
+                                    <td>23/03/2019</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">
+                                        Вклад							</td>
+                                    <td>
+                                        Элдик казына							</td>
+                                    <td><b><u>C</u> 100.00</b></td>
+                                    <td>23/03/2019</td>
+                                </tr>
+                                <tr class="plus">
+                                    <td class="color-type uppercasse">
+                                        Возврат средств							</td>
+                                    <td>
+                                        Элдик казына							</td>
+                                    <td><b><u>C</u> 10.00</b></td>
+                                    <td>23/03/2019</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="more mn10"><a href="transactions.html" class="more margin-none">Подробнее</a></div>
+                        </div>
+                    </div>
+                    <div class="member box-shadow">
+                        <h4>Ваш представитель</h4>
+                        <div class="image">
+                            <img src="/static/img/profile-image.png" alt="Begaliev Begaliev">
+                        </div>
+                        <div class="name">
+                            <p>Begaliev Begaliev</p>
+                        </div>
+                        <div class="rating">
+                            <span>Рейтинг:</span><span class="count">0</span>
+                        </div>
+                        <div class="table rating-box">
+                            <div class="d50">
+                                <div class="rating-r like ">15</div>
+                            </div>
+                            <div class="d50">
+                                <div class="rating-r dislike ">4</div>
+                            </div>
+                        </div>
+                        <div class="contacts">
+                            <h5>Контакты</h5>
+                            <a href="tel:+9960703003003">+9960703003003</a>
+                            <h5>E-mail</h5>
+                            <a href="mailto:begaliev@gmail.com">begaliev@gmail.com</a>
+                            <div class="add-rating"><a href="chat.html">написать представителю</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mn10"></div>
+            </div>        </div>
+    </div>
+</section>
+{% endblock body %}

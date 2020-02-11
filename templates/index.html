@@ -1,0 +1,368 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="first-screen">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-4 hide">
+                <div class="logo">
+                    <img src="/static/img/picture_national_treasury.png" alt="yurt">
+                </div>
+            </div>
+            <div class="main-stat">
+                <h1>Общая сумма фондов</h1>
+                <div class="stat-counter">
+                    <div class="middle desc">
+                        <div class="stat-count">
+                            <span>2</span>
+                        </div>
+                        <div class="stat-count">
+                            <span>5</span>
+                        </div>
+                        <div class="stat-count">
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="circle">
+                    <div class="center-circle"></div>
+                    <a href="registration.html" class="a">
+                        <div class="item circle-1">
+                            <div class="image"><img src="/static/img/port1.png" alt=""></div>
+                            <div class="numb">100.00</div>
+                            <h4>АШАР ФОНДУ</h4>
+                        </div>
+                    </a>
+                    <a href="registration.html" class="a">
+                        <div class="item circle-2">
+                            <div class="image">
+                                <div class="mn5"></div>
+                                <img src="/static/img/invest.png" alt="">
+                            </div>
+                            <div class="numb">100.00</div>
+                            <h4>Өнүгүү ФОНДУ</h4>
+                        </div>
+                    </a>
+                    <div class="item circle-3">
+                        <div class="image"><img src="/static/img/like.svg" alt=""></div>
+                        <div class="numb">50.00</div>
+                        <h4>КАЙРЫМДУУЛУК<br>ФОНДУ</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="why-choose-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mn30">
+                    <div class="mn20"></div>
+                </div>
+                <div class="circle">
+                    <div class="center-circle"></div>
+                    <div class="circle-item circle-1">
+                        <div class="item kazyna"></div>
+                        <p>Элдик Казына</p>
+                        <div class="circle-span">Это Инвестиционная Система для финансовых состовляющих людей</div>
+                    </div>
+                    <div class="circle-item circle-2">
+                        <div class="item item2"></div>
+                        <p>Доступность</p>
+                    </div>
+                    <div class="circle-item circle-3">
+                        <div class="item item3"></div>
+                        <p>Жоломан Транс</p>
+                    </div>
+                    <div class="circle-item circle-4">
+                        <div class="item"></div>
+                        <p>Социальность</p>
+                    </div>
+                    <div class="circle-item circle-5">
+                        <div class="item"></div>
+                        <p>Децентрализованость</p>
+                    </div>
+                    <div class="circle-item circle-6">
+                        <div class="item"></div>
+                        <p>Идеалогия</p>
+                    </div>
+                    <div class="circle-item circle-7">
+                        <div class="item item7"></div>
+                        <p>Доступность</p>
+                    </div>
+                    <div class="circle-item circle-8">
+                        <div class="item item8"></div>
+                        <p>Аба Жолдору</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><div class="yurt-bg"></div></div>
+        </div>
+    </div>
+</section>
+<section class="statistic">
+    <div class="container">
+        <h2 class="title">онлайн <span>статистика</span></h2>
+        <div class="bg-thirdary-color">
+            <div class="contentt">
+                <div class="table col-md-122 text-align-center margin-none">
+                    <div class="d33">
+                        <div class="middle">
+                            <div class="typcn-circled deposits"></div>
+                            <div class="h5"> <u class="f300">C</u></div>
+                            <p>
+                                <small>Всего инвестировано</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d33">
+                        <div class="middle">
+                            <div class="typcn-circled withdrawals"></div>
+                            <div class="h5"> <u class="f300">C</u></div>
+                            <p>
+                                <small>Всего выведено</small>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d33">
+                        <div class="middle">
+                            <div class="typcn-circled percent"></div>
+                            <div class="h5 none">3</div>
+                            <p>
+                                <small>Всего пользователей</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mn5"></div>
+        </div>
+    </div>
+</section>
+<section class="chat-wrap">
+    <div class="container">
+        <div class="contenttt">
+            <div class="mn30">
+                <div class="table">
+                    <div class="chat desc">
+                        <div class="chat__header">
+                            <div class="chat-name">
+                                <div class="chat__thumb"><img src="/static/img/group-icon.png" alt=""></div>
+                                <span>Основной чат</span>
+                            </div>
+                            <div class="online-count hide">сейчас онлайн <span>0 человек</span></div>
+                        </div>
+                        <div class="chat__content desc" data-value="0"></div>
+                        <div class="chat__footer">
+                            <div class="inp">
+                                <input type="text" class="new-message" placeholder="Введите текст">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="recent-action">
+    <div class="container">
+        <div class="contentt">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title">последние действия <span>участников</span></h2>
+                    <div class="table-responsive-lg">
+                        <table class="table table-striped margin-none main-table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Участники</th>
+                                <th scope="col">Дата</th>
+                                <th scope="col">Операция</th>
+                                <th scope="col" class="text-align-left">Сумма</th>
+                                <th scope="col" class="text-align-left">Примечание</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Бегалиев Тилек</th>
+                                <td>23/03/2019 23:14</td>
+                                <td>Вклад</td>
+                                <td class="text-align-left"><u class="bold">C</u> 100.00</td>
+                                <td class="text-align-left">Ашар фонду</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Бегалиев Тилек</th>
+                                <td>23/03/2019 01:26</td>
+                                <td>Вклад</td>
+                                <td class="text-align-left"><u class="bold">C</u> 50.00</td>
+                                <td class="text-align-left">Ашар фонду</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Бегалиев Тилек</th>
+                                <td>06/03/2019 17:08</td>
+                                <td>Вклад</td>
+                                <td class="text-align-left"><u class="bold">C</u> 500.00</td>
+                                <td class="text-align-left">Ашар фонду</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Бегалиев Тилек</th>
+                                <td>06/03/2019 17:04</td>
+                                <td>Вклад</td>
+                                <td class="text-align-left"><u class="bold">C</u> 50.00</td>
+                                <td class="text-align-left">Ашар фонду</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Бегалиев Тилек</th>
+                                <td>05/03/2019 17:13</td>
+                                <td>Вклад</td>
+                                <td class="text-align-left"><u class="bold">C</u> 50.00</td>
+                                <td class="text-align-left">Ашар фонду</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Бегалиев Тилек</th>
+                                <td>04/03/2019 15:59</td>
+                                <td>Вклад</td>
+                                <td class="text-align-left"><u class="bold">C</u> 850.00</td>
+                                <td class="text-align-left">Ашар фонду</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Бегалиев Тилек</th>
+                                <td>04/03/2019 15:52</td>
+                                <td>Вклад</td>
+                                <td class="text-align-left"><u class="bold">C</u> 850.00</td>
+                                <td class="text-align-left">Ашар фонду</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Бегалиев Тилек</th>
+                                <td>04/03/2019 15:44</td>
+                                <td>Вклад</td>
+                                <td class="text-align-left"><u class="bold">C</u> 500.00</td>
+                                <td class="text-align-left">Ашар фонду</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Бегалиев Тилек</th>
+                                <td>01/03/2019 19:52</td>
+                                <td>Вклад</td>
+                                <td class="text-align-left"><u class="bold">C</u> 850.00</td>
+                                <td class="text-align-left">Ашар фонду</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Бегалиев Тилек</th>
+                                <td>01/03/2019 18:51</td>
+                                <td>Вклад</td>
+                                <td class="text-align-left"><u class="bold">C</u> 50.00</td>
+                                <td class="text-align-left">Ашар фонду</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="more-btn"><a href="registration.html" class="more">Показать еще</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="reviews">
+    <div class="container">
+        <div class="m20">
+            <div class="row">
+                <div class="table margin-none">
+                    <h2 class="title">отзывы <span>участников</span></h2>
+                    <div class="tabs">
+                        <ul>
+                            <li class="tab-item active"><span>Видео отзывы</span></li>
+                            <li class="tab-item"><span>Фотогалерея</span></li>
+                        </ul>
+                        <div class="contents">
+                            <section class="video-reviews">
+                                <div class="table margin-none">
+                                    <div class="d33">
+                                        <div class="m10 padding-right">
+                                            <img src="/static/img/slide-3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="d33">
+                                        <div class="m5">
+                                            <img src="/static/img/slide-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="d33">
+                                        <div class="m10 padding-left">
+                                            <img src="/static/img/slide-video.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mn5"></div>
+                                <div class="table margin-none">
+                                    <div class="d33">
+                                        <div class="m10 padding-right">
+                                            <img src="/static/img/slide-video.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="d33">
+                                        <div class="m5">
+                                            <img src="/static/img/slide-3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="d33">
+                                        <div class="m10 padding-left">
+                                            <img src="/static/img/slide-2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="map">
+    <div class="container">
+        <div class="contentt">
+            <div class="mn30"></div>
+            <h2 class="title"><span>масштаб</span>ность</h2>
+            <div class="map-block">
+                <div class="xicon-1"></div>
+                <div class="xicon-location xlocation-1"></div>
+                <div class="xicon-location xlocation-2"></div>
+                <div class="xicon-location xlocation-3"></div>
+                <div class="xicon-location xlocation-4"></div>
+                <div class="xicon-location xlocation-5"></div>
+                <div class="xicon-location xlocation-6"></div>
+                <div class="xicon-location xlocation-7"></div>
+                <div class="xicon-location xlocation-8"></div>
+                <div class="representative-wrap">
+                    <div class="represent-alex">
+                        <div class="representative-imgs">
+                            <img src="/static/img/profile-image.png" alt="ELDIK KAZYNA">
+                        </div>
+                        <h1>Джон Смит</h1>
+                        <p>официальный делегат </p>
+                    </div>
+                    <div class="representative-desc">
+                        <p>
+                            Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности представляет собой интересный эксперимент проверки направлений прогрессивного развития. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации соответствующий условий активизации.
+                        </p>
+                    </div>
+                    <a href="#" class="a read-more represent-btn">Узнать подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}

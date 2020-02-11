@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block body %}
+<section class="login-page auth">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"><h1>Регистрация</h1></div>
+        </div>
+        <form method="post" autocomplete="off">
+            {% csrf_token %}
+            <div class="row">
+                <div class="form">
+                    <label><span class="red">*</span> Имя</label>
+                    <input type="text" name="name" class="input" placeholder="Имя"{{ form.first_name }}
+                    <label><span class="red">*</span> Фамилия</label>
+                    <input type="text" name="surname" class="input" placeholder="Фамилия"{{ form.last_name }}
+                    <label><span class="red">*</span> Регион</label>
+                    <select class="input" name="region"{{ form.region }}
+                    </select>
+                    <label><span class="red">*</span> Номер телефона</label>
+                    <input type="text" name="username" class="input" placeholder="Номер телефона (0XXX XX XX XX)"{{ form.username }}
+                    <label>Ваш e-mail</label>
+                    <input type="email" name="email" class="input" placeholder="Электронная почта"{{ form.email }}
+                    <div class="middle">
+                        <input type="checkbox" name="agree" id="checkbox" required>
+                        <label for="checkbox" class="m5">Я принимаю <a href="/rules" class="a">условия соглашения</a></label>
+                    </div>
+                    <button type="submit" name="registration">Регистрация</button>
+                    <input type="hidden" name="secure-code" value="170807">
+                    <input type="hidden" name="screen-size">
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock body %}
