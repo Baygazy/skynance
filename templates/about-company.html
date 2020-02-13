@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block body %}
 <section class="content">
     <div class="container">
@@ -33,7 +34,7 @@
                     {% if about %}
                         <div class="image"><img src="{{ about.photo.url }}" alt="Responsive image"></div>
                     {% else %}
-                        <div class="image"><img src="/static/img/building.png" alt="Responsive image"></div>
+                        <div class="image"><img src="{% static 'img/building.png' %}" alt="Responsive image"></div>
                     {% endif %}
 
                 {% if about %}

@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -25,14 +25,14 @@
     <meta name="twitter:description" content="Элдик Казына - бул Уркор Эли коомдук бирикменин платформасы. Көзөмөлчүлөр аркылуу катышуучулар текшерүү иштерин жүргүзүшөт. Алар катышуучу тарабынан кызматына койулат жана алмаштырылат. Эсеп курамындагы элдик көзөмөл ар бир дубандан тең санда бирден гана болуусу зарыл. Айлык майана көрсөтүлгөн эмес. Текшерүү кызмат учурунда жол кире, тамак аш, жатакана чыгымдары төлөнүп берилет.">
     <meta name="twitter:image" content="http://kazyna.kgassets/img/logo.png">
 
-    <link rel="stylesheet" href="/static/libs/slick/slick.css">
-    <link rel="stylesheet" href="/static/libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="{% static 'libs/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/slick/slick-theme.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css?=1.0.1">
-    <link rel="stylesheet" href="/static/css/reset.css">
-    <link rel="stylesheet" href="/static/css/bootstrap.css?=1.0.1">
-    <link rel="stylesheet" href="/static/css/styles.css?=1.0.4">
-    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
 </head>
 <body class="wh">
 <div class="fixed-social left">
@@ -51,11 +51,11 @@
 {% block body %}
 {% endblock body %}
 {% include 'footer.html' %}
-<script src="/static/js/jquery-3.3.1.min.js"></script>
-<script src="/static/js/jquery-ui.min.js"></script>
-<script src="/static/libs/slick/slick.min.js"></script>
-<script src="/static/js/form.js"></script>
-<script src="/static/js/mas.js"></script>
-<script src="/static/js/common.js?=1.0.1"></script>
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/jquery-ui.min.js' %}"></script>
+<script src="{% static 'libs/slick/slick.min.js' %}"></script>
+<script src="{% static 'js/form.js' %}"></script>
+<script src="{% static 'js/mas.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
 </body>
 </html>

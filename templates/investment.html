@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block body %}
 <section class="profile-page">
     <div class="container">
@@ -8,7 +9,7 @@
                     <div class="box-shadow">
                         <div class="profile">
                             <div class="image">
-                                <img src="/static/img/profile-image.png" alt="Бегалиев Тилек Таалаевич">
+                                <img src="{% static 'img/profile-image.png' %}" alt="Бегалиев Тилек Таалаевич">
                             </div>
                             <div class="name">
                                 <p>Бегалиев Тилек Таалаевич</p>
@@ -32,17 +33,17 @@
                         <div class="mn5"></div>
                         <div class="projects">
                             <div class="item">
-                                <div class="image"><img src="/static/img/svg/1.svg" alt="Ашар фонду"></div>
+                                <div class="image"><img src="{% static 'img/svg/1.svg' %}" alt="Ашар фонду"></div>
                                 <h3 class="title">Ашар фонду</h3>
                                 <p class="sum">100.00 <u>C</u></p>
                             </div>
                             <div class="item">
-                                <div class="image"><img src="/static/img/svg/2.svg" alt="Кайрымдуулук"></div>
+                                <div class="image"><img src="{% static 'img/svg/2.svg' %}" alt="Кайрымдуулук"></div>
                                 <h3 class="title">Кайрымдуулук</h3>
                                 <p class="sum">50.00 <u>C</u></p>
                             </div>
                             <div class="item">
-                                <div class="image"><img src="/static/img/svg/3.svg" alt="Инвест фонду"></div>
+                                <div class="image"><img src="{% static 'img/svg/3.svg' %}" alt="Инвест фонду"></div>
                                 <h3 class="title">Инвест фонду</h3>
                                 <p class="sum">100.00 <u>C</u></p>
                             </div>
@@ -79,7 +80,7 @@
                     <div class="member box-shadow">
                         <h4>Ваш представитель</h4>
                         <div class="image">
-                            <img src="/static/img/profile-image.png" alt="Begaliev Begaliev">
+                            <img src="{% static 'img/profile-image.png' %}" alt="Begaliev Begaliev">
                         </div>
                         <div class="name">
                             <p>Begaliev Begaliev</p>

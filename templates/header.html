@@ -1,9 +1,11 @@
+{% load static %}
+{% load main_tags %}
 <header class="header">
     <div class="container">
         <div class="d-flex justify-content-between">
             <div class="d-inline-flex align-items-center">
                 <div class="logo">
-                    <a href="{% url 'home' %}"><img src="/static/img/logo.png" alt="layer"></a>
+                    <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="layer"></a>
                 </div>
             </div>
             <div class="right">
@@ -11,19 +13,19 @@
                     <div class="d-inline-flex align-items-center">
                         <ul class="top-menu">
                             <li>
-                                <a href="{% url 'home' %}" class="">Главная</a>
+                                <a href="{% url 'home' %}" class="{% top_menu_active_class request '/' %}">Главная</a>
                             </li>
                             <li>
-                                <a href="{% url 'about' %}" class="">О компании</a>
+                                <a href="{% url 'about' %}" class="{% top_menu_active_class request '/about_company/' %}">О компании</a>
                             </li>
 {#                            <li>#}
 {#                                <a href="news.html" class="">Новости</a>#}
 {#                            </li>#}
                             <li>
-                                <a href="{% url 'faq' %}" class="">Вопрос/Ответы</a>
+                                <a href="{% url 'faq' %}" class="{% top_menu_active_class request '/faq/' %}">Вопрос/Ответы</a>
                             </li>
                             <li>
-                                <a href="{% url 'contact' %}" class="">Контакты</a>
+                                <a href="{% url 'contact' %}" class="{% top_menu_active_class request '/contact/' %}">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -42,7 +44,7 @@
                     </div>
                 </div>
             </div>
-            <div class="xs-menu"><img src="/static/img/xs-menu-image.png" alt=""></div>
+            <div class="xs-menu"><img src="{% static 'img/xs-menu-image.png' %}" alt=""></div>
         </div>
     </div>
 </header>

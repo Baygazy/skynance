@@ -7,8 +7,10 @@
         </div>
         <form method="post" autocomplete="off">
             {% csrf_token %}
+
             <div class="row">
                 <div class="form">
+{#                    {{ form.as_p }}#}
                     <label><span class="red">*</span> Имя</label>
                     <input type="text" name="name" class="input" placeholder="Имя"{{ form.first_name }}
                     <label><span class="red">*</span> Фамилия</label>
@@ -25,8 +27,8 @@
                         <label for="checkbox" class="m5">Я принимаю <a href="/rules" class="a">условия соглашения</a></label>
                     </div>
                     <button type="submit" name="registration">Регистрация</button>
-                    <input type="hidden" name="secure-code" value="170807">
-                    <input type="hidden" name="screen-size">
+{#                    <input type="hidden" name="secure-code" value="170807">#}
+{#                    <input type="hidden" name="screen-size">#}
                 </div>
             </div>
         </form>

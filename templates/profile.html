@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block body %}
 <section class="profile-page">
     <div class="container">
@@ -8,14 +9,14 @@
                     <div class="box-shadow">
                         <div class="profile">
                             <div class="image">
-                                <img src="/static/img/profile-image.png" alt="Бегалиев Тилек Таалаевич">
+                                <img src="{{ user.profile.photo.url }}" alt="photo">
                             </div>
                             <div class="name">
-                                <p>Бегалиев Тилек Таалаевич</p>
+                                <p>{{ user.profile.first_name }} {{ user.profile.last_name }}</p>
                             </div>
                             <div class="balance">
                                 <span>мой баланс:</span>
-                                <p>750.00 <u>C</u></p>
+                                <p>{{ user.profile.balance }} <u>C</u></p>
                             </div>
                         </div>
                         <nav class="sidebar-menu">
@@ -96,7 +97,7 @@
                     <div class="member box-shadow">
                         <h4>Ваш представитель</h4>
                         <div class="image">
-                            <img src="/static/img/profile-image.png" alt="Begaliev Begaliev">
+                            <img src="{% static 'img/profile-image.png' %}" alt="Begaliev Begaliev">
                         </div>
                         <div class="name">
                             <p>Begaliev Begaliev</p>

@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser, BaseUserManager
+from django.db.models.signals import post_save
 from django.utils.translation import ugettext_lazy as _
 
 from region.models import Region
@@ -50,12 +51,21 @@ class CustomUser(AbstractUser):
         return self.first_name
 
 class Profile(models.Model):
-    user = models.ForeignKey(CustomUser, null=True, blank=True, on_delete=models.CASCADE, related_name='profile', unique=True)
-    first_name = models.CharField(max_length=15, help_text='first_name')
-    last_name = models.CharField(max_length=15, help_text='last_name')
-    photo = models.ImageField(upload_to='images/user/', null=True, blank=True)
+    user = models.OneToOneField(CustomUser, on_delete=models.CASCADE, related_name='profile', unique=True)
+    first_name = models.CharField(max_length=15, help_text='first_name', default='')
+    last_name = models.CharField(max_length=15, help_text='last_name', default='')
+    photo = models.ImageField(upload_to='images/user/profile/', null=True, default='/images/user/profile/profile-image.png')
     balance = models.IntegerField(default=0)
     registration_date = models.DateTimeField(auto_now_add=True)
+
+    # def __str__(self):
+    #     return self.user
+
+def create_profile(sender, **kwargs):
+    if kwargs['created']:
+        user_profile = Profile.objects.create(user=kwargs['instance'])
+
+post_save.connect(create_profile, sender=CustomUser)
 
 class Photo(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='photos')

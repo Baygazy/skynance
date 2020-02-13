@@ -143,6 +143,25 @@ class ChatView(TemplateView):
         })
 
 # Sidebar #########################################################
+class SideView(TemplateView):
+    template_name = 'profile-sidebar-menu.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, context={
+            'profile':'profile',
+            'investment':'investment',
+            'investments':'investments',
+            'refill':'refill',
+            'transactions':'transactions',
+            'profile-settings':'profile-settings',
+            'password_change':'password_change',
+            'chat':'chat',
+        })
+
+    def post(self, request, *args, **kwargs):
+        return render(request, self.template_name, context={
+        })
+# Sidebar #########################################################
 
 
 # Footer #########################################################

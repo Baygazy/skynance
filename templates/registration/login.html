@@ -16,23 +16,30 @@
                     <div class="table">
                         <div class="mn5"></div>
                         <div class="form">
-                            <form method="post">
+                            <h1>Log-in</h1>
+                            <p>Please, use the following form to log-in:</p>
+                            <form action="." method="post">
+                                {{ form.as_p }}
                                 {% csrf_token %}
-                                <label>Номер телефона</label>
-                                <input type="text" name="username" class="input" placeholder="Номер телефона (0XXX XX XX XX)" required value={{ form.username }}
-                                <label>Пароль</label>
-                                <input type="password" name="password" class="input" placeholder="Пароль" required value={{ form.password }}
-                                <div class="table margin-none">
-                                    <div class="middle">
-                                        <label>
-                                            <a href="{% url 'password_reset' %}" class="a">Забыли пароль?</a>
-                                        </label>
-                                    </div>
-                                </div>
-                                <button type="submit" name="login">Войти</button>
-                                <input type="hidden" name="secure-code" value="566009">
-                                <input type="hidden" name="screen-size">
+                                <p><input type="submit" value="Log in"></p>
                             </form>
+{#                            <form method="post">#}
+{#                                {% csrf_token %}#}
+{#                                <label>Номер телефона</label>#}
+{#                                <input type="text" name="username" class="input" placeholder="Номер телефона (0XXX XX XX XX)" required value={{ form.username }}#}
+{#                                <label>Пароль</label>#}
+{#                                <input type="password" name="password" class="input" placeholder="Пароль" required value={{ form.password }}#}
+{#                                <div class="table margin-none">#}
+{#                                    <div class="middle">#}
+{#                                        <label>#}
+{#                                            <a href="{% url 'password_reset' %}" class="a">Забыли пароль?</a>#}
+{#                                        </label>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <button type="submit" name="login">Войти</button>#}
+{#                                <input type="hidden" name="secure-code" value="566009">#}
+{#                                <input type="hidden" name="screen-size">#}
+{#                            </form>#}
                         </div>
                     </div>
                 </div>

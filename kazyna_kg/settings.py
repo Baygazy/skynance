@@ -25,7 +25,7 @@ SECRET_KEY = '$5rnju4%xpa+j461_#3@bbk26yp^(q(42a8#zyy4uxoo1*pg)^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -127,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 AUTH_USER_MODEL = 'users.CustomUser'  # for create USERS
@@ -136,3 +136,5 @@ LOGOUT_REDIRECT_URL = 'home'    # url after logout
 
 MEDIA_URL = '/media/'  # for upload images
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+AUTH_PROFILE_MODULE = 'accounts.Profile'

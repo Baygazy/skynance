@@ -1,11 +1,12 @@
+{% load user_tags %}
 <ul>
-    <li><a href="{% url 'profile' %}" class="active">Личный кабинет</a></li>
-    <li><a href="{% url 'investment' %}" class="">Инвестировать</a></li>
-    <li><a href="{% url 'investments' %}" class="">Мои Вложения</a></li>
-    <li><a href="{% url 'refill' %}" class="">Прием платежей</a></li>
-    <li><a href="{% url 'transactions' %}" class="">История</a></li>
-    <li><a href="{% url 'profile-settings' %}" class="">Настройки</a></li>
-    <li><a href="{% url 'password_change' %}" class="">Сменить пароль</a></li>
-    <li><a href="{% url 'chat' %}" class="">Чат</a></li>
+    <li><a href="{% url 'profile' %}" class="{% sidebar_active_class request '/profile/' %}">Личный кабинет</a></li>
+    <li><a href="{% url 'investment' %}" class="{% sidebar_active_class request '/investment/' %}">Инвестировать</a></li>
+    <li><a href="{% url 'investments' %}" class="{% sidebar_active_class request '/investments/' %}">Мои Вложения</a></li>
+    <li><a href="{% url 'refill' %}" class="{% sidebar_active_class request '/refill/' %}">Прием платежей</a></li>
+    <li><a href="{% url 'transactions' %}" class="{% sidebar_active_class request '/transactions/' %}">История</a></li>
+    <li><a href="{% url 'profile-settings' %}" class="{% sidebar_active_class request '/profile-settings/' %}">Настройки</a></li>
+    <li><a href="{% url 'password_change' %}" class="{% sidebar_active_class request '/password_change/' %}">Сменить пароль</a></li>
+    <li><a href="{% url 'chat' %}" class="{% sidebar_active_class request '/chat/' %}">Чат</a></li>
 {#    <li><a href="/discount" class="">Дисконт</a></li>#}
 </ul>

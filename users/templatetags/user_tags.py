@@ -1,19 +1,9 @@
-from main.models import *
+from users.models import *
 from django import template
 
 register = template.Library()
 
 
-
-@register.simple_tag
-def top_menu_active_class(request, who):
-    indicate = request.path
-    if who == indicate:
-        return 'active'
-    else:
-        return ''
-#
-#
 # @register.inclusion_tag('event/event_profile_top.html')
 # def top_info(event):
 #     return {'event': event}
@@ -37,14 +27,15 @@ def top_menu_active_class(request, who):
 #         return "item dark"
 #     else:
 #         return "item dark not-paid"
-#
-# @register.simple_tag
-# def win_class(winner, fighter):
-#     if winner and winner == fighter:
-#         return 'win'
-#     else:
-#         return ''
-#
+
+@register.simple_tag
+def sidebar_active_class(request, who):
+    indicate = request.path
+    if who == indicate:
+        return 'active'
+    else:
+        return ''
+
 # @register.simple_tag
 # def bracket_status_class(group_bracket):
 #     if group_bracket.status == "FINISHED":
@@ -86,3 +77,10 @@ def top_menu_active_class(request, who):
 #         return "third-place"
 #     else:
 #         return ""
+#
+# @register.simple_tag
+# def status_match(bracket):
+#     if bracket.status == 'PLAY':
+#         return "list-item active-match"
+#     elif bracket.status == 'PREPARE_FIRST' or bracket.status == 'PREPARE_SECOND':
+#         return "list-item be-ready"
